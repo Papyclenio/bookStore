@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li class="subLista"><a href="#">Livro</a>
-                    
+
                     <ul class="listaEsco">
                         <li><a href="#">Romance</a></li>
                         <li><a href="#">Aventura</a></li>
@@ -42,15 +42,55 @@
             <input type="text" name="inputBuscar" id="inputBuscar" placeholder="Buscar...">
             <label for="
             inputBuscar" class="input_Img">
-                <img src="src/img/icone/lupa.png" width="32px">
+                <img src="src/img/icone/lupa.png" width="32px" onclick="buscar()">
             </label>
         </div>
         <div class="banner">
-            <img src="src/img/baner/pexels-pixabay-261821.jpg" class="img-pri">
-            <img src="src/img/icone/seta-esquerda.png" width="32px" class="seta-left circ">
-            <img src="src/img/icone/mover-para-a-proxima.png" width="32px" class="seta-right circ">
+            <img id="banner" src="src/img/baner/img_ (1).jpg" class="img-pri">
+            <img src="src/img/icone/seta-esquerda.png" width="32px" class="seta-left circ" onclick="chengeImgLeft()">
+            <img src="src/img/icone/mover-para-a-proxima.png" width="32px" class="seta-right circ"
+                onclick="chengeImgRight()">
         </div>
     </section>
+    <main>
+        <section class="content-card sessão_space">
+            <div class="card">
+                
+                </div>
+            </div>
+            <div class="card">
+
+            </div>
+            <div class="card">
+                <div class="card_img">
+                    <img src="src/img/card/img(1).jpg" width="80px" class="img_gir">
+                </div>
+                <div class="card_text">
+                    <div>
+
+                    </div>
+                    <button>Saiba mais</button>
+
+            </div>
+        </section>
+        <section class="sessão_space">
+            <div class="card_text">
+                <h2>
+                Principais categorias
+                </h2>
+                <div class="button-verMais">
+                    <p><a href="#"><span>Ver mais</span><img src="src/img/icone/seta-direita.png" width="15px"></a></p>
+                </div>
+            </div>
+            <div class="content-book">
+                <div class="card_book"></div>
+                <div class="card_book"></div>
+                <div class="card_book"></div>
+                <div class="card_book"></div>
+            </div>
+        </section>
+    </main>
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>

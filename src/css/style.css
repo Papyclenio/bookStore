@@ -24,6 +24,7 @@ body {
 header {
     gap: 20px;
     width: 100%;
+    z-index: 12;
     height: 64px;
     display: flex;
     position: fixed;
@@ -41,8 +42,8 @@ header {
 }
 
 .logo h1 {
-    color: var(--detalhe);
     font-family: cursive;
+    color: var(--detalhe);
 }
 
 nav {
@@ -61,18 +62,19 @@ nav ul a {
 }
 
 .seta_baixo {
-    left: 71.5%;
     top: 24.8%;
+    left: 71.5%;
     position: absolute;
     margin-left: 15px;
 }
 
 .seta_sima {
-    left: 71.5%;
     top: -5%;
+    left: 71.5%;
     display: none;
-    position: absolute;
     margin-left: 8px;
+    position: absolute;
+
 }
 
 .subLista:hover .seta_sima {
@@ -130,10 +132,10 @@ nav ul a {
 .inputbuscar input {
     width: 300px;
     outline: none;
-    border: 2px solid var(--la_1);
-    border-radius: 5px 0px 0px 5px;
     padding: 10px 0px 5px 5px;
+    border: 2px solid var(--la_1);
     background-color: #ffffff8c;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .inputbuscar input::placeholder {
@@ -143,6 +145,7 @@ nav ul a {
 .inputbuscar label img {
     left: 100%;
     bottom: 2.5%;
+    cursor: pointer;
     position: absolute;
     border-radius: 0px 5px 5px 0px;
     background-color: var(--la_1);
@@ -154,19 +157,87 @@ nav ul a {
 }
 
 .banner .seta-left {
-    position: absolute;
     left: 2%;
     top: 45%;
+    cursor: pointer;
+    position: absolute;
 }
 
 .banner .seta-right {
-    position: absolute;
-    left: 95%;
     top: 45%;
-    direction: ltr;
+    left: 95%;
+    cursor: pointer;
+    position: absolute;
 }
 
 .circ:hover {
     border-radius: 50%;
     background-color: var(--la_1);
+}
+
+.sessão_space {
+    margin-top: 70px;
+    margin-inline: 5%;
+}
+
+.content-card {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #c44110;
+}
+
+.img_gir{
+    left: 150px;
+    top: 80px;
+    position:relative;
+
+}
+
+.card_text {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-book {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card_book {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    background-color: #c44110;
+}
+
+.button-verMais {
+    display: flex;
+    border-radius: 5px;
+    padding-inline: 5px;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.button-verMais a {
+    font-size: 1.5rem;
+    color: var(--fonte);
+    text-decoration: none;
+}
+
+.button-verMais img {
+    top: 3px;
+    margin-left: 5px;
+    position: relative;
 }
