@@ -5,7 +5,6 @@
     --azull: #10aac4;
     --la_1: #c44110;
     --detalhe: #c46110;
-    --la_2: #c47e10;
 }
 
 * {
@@ -97,7 +96,7 @@ nav ul a {
     left: 0;
     top: 100%;
     display: none;
-    height: 210px;
+    height: 240px;
     position: absolute;
     border-radius: 5px;
     flex-direction: column;
@@ -125,7 +124,7 @@ nav ul a {
 
 .inputbuscar {
     left: 35%;
-    top: 30%;
+    top: 35%;
     position: absolute;
 }
 
@@ -151,23 +150,9 @@ nav ul a {
     background-color: var(--la_1);
 }
 
-.banner .img-pri {
+.img-pri {
     width: 100%;
     height: 700px;
-}
-
-.banner .seta-left {
-    left: 2%;
-    top: 45%;
-    cursor: pointer;
-    position: absolute;
-}
-
-.banner .seta-right {
-    top: 45%;
-    left: 95%;
-    cursor: pointer;
-    position: absolute;
 }
 
 .circ:hover {
@@ -205,21 +190,6 @@ nav ul a {
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
-}
-
-.content-book {
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.card_book {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 70px;
-    border-radius: 10px;
-    background-color: #c44110;
 }
 
 .button-verMais {

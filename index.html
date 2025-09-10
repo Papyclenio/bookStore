@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/swiper.css">
     <link rel="stylesheet" href="src/css/style.css">
     <title>bookStore</title>
 </head>
@@ -45,51 +47,60 @@
                 <img src="src/img/icone/lupa.png" width="32px" onclick="buscar()">
             </label>
         </div>
-        <div class="banner">
-            <img id="banner" src="src/img/baner/img_ (1).jpg" class="img-pri">
-            <img src="src/img/icone/seta-esquerda.png" width="32px" class="seta-left circ" onclick="chengeImgLeft()">
-            <img src="src/img/icone/mover-para-a-proxima.png" width="32px" class="seta-right circ"
-                onclick="chengeImgRight()">
-        </div>
+       <div >
+            <img src="src/img/baner/img_ (1).jpg" class="img-pri" id="banner">
+       </div>
     </section>
     <main>
         <section class="content-card sessão_space">
             <div class="card">
-                
-                </div>
+
+            </div>
             </div>
             <div class="card">
 
             </div>
             <div class="card">
                 <div class="card_img">
-                    <img src="src/img/card/img(1).jpg" width="80px" class="img_gir">
+
                 </div>
                 <div class="card_text">
                     <div>
 
                     </div>
-                    <button>Saiba mais</button>
 
-            </div>
+
+                </div>
         </section>
         <section class="sessão_space">
             <div class="card_text">
                 <h2>
-                Principais categorias
+                    Principais categorias
                 </h2>
                 <div class="button-verMais">
                     <p><a href="#"><span>Ver mais</span><img src="src/img/icone/seta-direita.png" width="15px"></a></p>
                 </div>
             </div>
-            <div class="content-book">
-                <div class="card_book"></div>
-                <div class="card_book"></div>
-                <div class="card_book"></div>
-                <div class="card_book"></div>
+            <div class="swiper card-book">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="card-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
             </div>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/js/swiper.js"></script>
     <script src="src/js/script.js"></script>
 </body>
 
